@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>
+            Ionic Blank
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item>
+        <ion-label position="floating">name</ion-label>
+        <ion-input [(ngModel)]="name" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label position="floating">Surname</ion-label>
+        <ion-input [(ngModel)]="surname" type="text"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+        <ion-label position="floating">Age</ion-label>
+        <ion-input [(ngModel)]="Age" type="number"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+        <ion-label>Gender</ion-label>
+        <ion-select placeholder="Select One" [(ngModel)]="gender" type="text">
+            <ion-select-option value="female">Female</ion-select-option>
+            <ion-select-option value="male">Male</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-button color="primary" expand="full" (click)="nextPage()">Full Button</ion-button>
+
+</ion-content>
