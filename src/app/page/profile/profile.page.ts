@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PERSON_LIST } from 'src/app/mocks/person.mock';
 
 @Component({
   selector: 'app-profile',
@@ -6,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.page.scss'],
 })
 export class ProfilePage implements OnInit {
+
+  // cat = true;
+
+  cat = false;
+
+ personList = PERSON_LIST;
 
   constructor() { }
 

@@ -24,11 +24,12 @@ export class NotificationsPage implements OnInit {
   ngOnInit() {
   }
 
-submit(info)
+submit({value, valid}: {value:person, valid:boolean})
  {
-  console.log(info.name);
-  console.log(info.surname);
-  console.log(info.age);
-  console.log(info.gender)
+  console.log(value.name);
+  console.log(value.surname);
+  console.log(value.age);
+  console.log(value.gender);
+  console.log(valid)
  }
 }

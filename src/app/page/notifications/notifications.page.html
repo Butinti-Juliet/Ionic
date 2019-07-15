@@ -6,6 +6,10 @@
 
 <ion-content>
 
+    <!-- <div *ngif="info.controls.name.invalid && info.controls.name.dirty">
+        <p>*Please Enter Your Name</p>
+    </div> -->
+
 
     <form [formGroup]="info" (ngSubmit)="submit(info)">
         <ion-item>
@@ -33,7 +37,7 @@
             </ion-select>
         </ion-item>
 
-        <ion-button color="primary" expand="full" [disabled]="info-invalid">Submit</ion-button>
+        <ion-button color="primary" expand="full" type="submit" [disabled]="info.invalid">Submit</ion-button>
 
 
     </form>
